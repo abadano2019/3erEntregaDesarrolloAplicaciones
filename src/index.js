@@ -116,7 +116,7 @@ const App = () => {
           
     setOrderTasks(tasks)
     setViewRecords(true);
-    console.log(orderTasks)    
+    
   }
 
   
@@ -130,7 +130,7 @@ const App = () => {
     if (viewRecords) {
       return(<Records 
         onHandleReturn={onHandleReturn} 
-        tasks = {orderTasks}/>)
+        tasks = {tasks}/>)
     }
     
     if (userNumber && guessRounds <= 0) {

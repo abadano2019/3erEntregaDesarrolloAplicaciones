@@ -33,8 +33,8 @@ const Game = ({ selectedNumber, onHandleGameOver }) => {
       (direction === "lower" && currentGuess < selectedNumber) ||
       (direction === "greater" && currentGuess > selectedNumber)
     ) {
-      Alert.alert("No mientas!", "Sabes que eso es incorrecto...", [
-        { text: "Perdon!", style: "cancel" },
+      Alert.alert("Error!!!!", "Vuelve a intentar...", [
+        { text: "OK", style: "cancel" },
       ]);
       setError(error + 1)
       return;
