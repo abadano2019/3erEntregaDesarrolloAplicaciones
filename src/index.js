@@ -48,6 +48,8 @@ const App = () => {
     setGuessErrors(0);
   };
 
+  // Función para ordenar los registros de los records
+  // por rounds luego por tiempo y luego por errores
   const orderRecord = () =>{
     tasks.sort( (a, b) => {
       if(a.rounds < b.rounds) {
@@ -91,8 +93,8 @@ const App = () => {
               ])}
 
     //orderRecord()
-    
-    tasks.sort( (a, b) => {
+    ////////// Ordenr los registros //////////////
+    /*tasks.sort( (a, b) => {
       if(a.rounds < b.rounds) {
         return -1;
       }
@@ -113,7 +115,7 @@ const App = () => {
       }
       return 0;
     }) 
-          
+    */      
     setOrderTasks(tasks)
     setViewRecords(true);
     
